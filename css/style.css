@@ -1,0 +1,46 @@
+.era-header {
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.dino-card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+.dino-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #2B2B2B;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2B2B2B;
+}
+
+.img-size {
+    width: 80px;
+    height: 80px;
+}
