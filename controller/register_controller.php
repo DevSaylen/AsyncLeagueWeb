@@ -1,6 +1,6 @@
 <?php
 
-$pdo = new PDO("mysql:host=localhost;dbname=u274935610_dinomuseum", "u274935610_graven", "Gravenilvec12345");
+$pdo = new PDO("mysql:host=localhost;dbname=dinomuseum", "root", "root");
 
 if (!empty($_POST['user_username']) &&
     !empty($_POST['user_email']) &&

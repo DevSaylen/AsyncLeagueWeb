@@ -1,6 +1,9 @@
 <?php
 
 include 'navbar.php';
+include '../controller/view_game_controller.php';
+
+?>
 
 ?>
 
@@ -31,3 +34,29 @@ include 'navbar.php';
     </form>
 
 </div>
+
+<div class="container py-5">
+    <h2 class="text-center my-5 text-light">Vos techniques de fouille</h2>
+
+    <div class="row">
+        <?php foreach ($educs as $educ): ?>
+            <div class="col-md-4">
+                <div class="card dino-card h-100 text-light bg-light p-3 p-md-5 rounded-5">
+                    <?php
+                    $imagePath = !empty($educ['fossil_image']) ? "image/FossilGame/" . htmlspecialchars($educ['fossil_image']) : "image/default.jpg";
+                    ?>
+                    <img src="<?= $imagePath ?>" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text text-dark fs-5">
+                            <?= htmlspecialchars($educ['fossil_method']); ?>
+                        </p>
+                        <p class="card-text text-dark fs-5">
+                            <?= htmlspecialchars($educ['tools_used']); ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+

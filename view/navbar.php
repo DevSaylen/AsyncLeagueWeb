@@ -61,7 +61,7 @@ if ($user && !empty($user['user_image_profil'])) {
                     </div>
                 </li>
             </ul>
-            <img class="img-size" src="<?php echo $imagePath; ?>" alt="Image de profil">
+            <img class="img-size rounded-circle" src="<?php echo $imagePath; ?>" alt="Image de profil">
         </div>
     </div>
 </nav>

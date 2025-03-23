@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=u274935610_dinomuseum", "u274935610_graven", "Gravenilvec12345");
+    $pdo = new PDO("mysql:host=localhost;dbname=dinomuseum", "root", "root");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Gestion des erreurs
 } catch (PDOException $e) {
     die("Erreur de connexion à la base de données : " . $e->getMessage());

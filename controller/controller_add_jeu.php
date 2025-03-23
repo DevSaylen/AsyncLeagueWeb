@@ -4,7 +4,7 @@ if(!empty($_POST['fossil_method']) &&
     !empty($_POST['tools_used'])
 ){
 
-    $pdo = new PDO("mysql:host=localhost;dbname=u274935610_dinomuseum", "u274935610_graven", "Gravenilvec12345");
+    $pdo = new PDO("mysql:host=localhost;dbname=dinomuseum", "root", "root");
 
     // Vérification obligatoire de l'image
     if (!isset($_FILES['fossil_image']) || $_FILES['fossil_image']['error'] !== UPLOAD_ERR_OK) {
